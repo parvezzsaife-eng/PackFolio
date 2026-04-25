@@ -177,10 +177,14 @@ function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <div className="p-2 bg-white/10 rounded-full mt-1">
+                <Link href={`tel:+91${config.WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                   <Phone className="w-4 h-4 text-white" />
+                  </Link>
                 </div>
                 <div>
-                  <p className="text-white font-medium">+91 {config.WHATSAPP_NUMBER.substring(2)}</p>
+                  <Link href={`tel:+91${config.WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                    +91 {config.WHATSAPP_NUMBER}
+                  </Link>
                   <p className="text-xs">{config.WORKING_HOURS}</p>
                 </div>
               </li>
@@ -190,7 +194,9 @@ function Footer() {
               </li>
               <li className="flex gap-2">
                 <span className="font-semibold text-white">Email:</span>
-                <span>{config.EMAIL}</span>
+                <Link href={`mailto:${config.EMAIL}`} className="hover:text-white transition-colors">
+                  <span>{config.EMAIL}</span>
+                </Link>
               </li>
             </ul>
           </div>
