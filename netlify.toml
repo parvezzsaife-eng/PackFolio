@@ -1,0 +1,8 @@
+[build]
+  # set this to your actual publish directory: "build" for CRA, "dist" for Vite
+  publish = "build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
