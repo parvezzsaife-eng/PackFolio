@@ -1,6 +1,6 @@
 [build]
   # set this to your actual publish directory: "build" for CRA, "dist" for Vite
-  publish = "build"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
