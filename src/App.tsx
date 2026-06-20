@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { HelmetProvider } from "react-helmet-async";
 import { CartProvider } from "@/context/CartContext";
+import ScrollToTop from "@/components/ScrollToTop";
 
 // Pages
 import HomePage from "@/pages/HomePage";
@@ -42,6 +43,7 @@ function App() {
           <CartProvider>
             <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
               <Router />
+              <ScrollToTop />
             </WouterRouter>
             <Toaster />
           </CartProvider>
